@@ -21,7 +21,8 @@ def main():
         right_answer = 'yes' if is_even(num) else 'no'
 
         if user_answer != right_answer:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was {right_answer}")
+            print((f"'{user_answer}' is wrong answer ;(. "
+                   f"Correct answer was '{right_answer}'"))
             print(f"Let's try again, {user_name}!")
             return
         else:
