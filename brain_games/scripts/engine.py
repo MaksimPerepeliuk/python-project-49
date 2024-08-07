@@ -1,12 +1,7 @@
-from random import randint
 import prompt
 
 
-def is_even(num):
-    return num % 2 == 0
-
-
-def main():
+def engine(game):
     print('Welcome to the Brain Games!')
     user_name = prompt.string('May I have your name? ')
     print(f'Hello, {user_name}!')
@@ -15,10 +10,9 @@ def main():
     right_answer_count = 0
 
     while right_answer_count < 3:
-        num = randint(1, 30)
-        print(f'Question: {num}')
+        question, right_answer = game()
+        print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')
-        right_answer = 'yes' if is_even(num) else 'no'
 
         if user_answer != right_answer:
             print((f"'{user_answer}' is wrong answer ;(. "
@@ -30,7 +24,3 @@ def main():
             print('Correct!')
 
     print(f'Congratulations, {user_name}')
-
-
-if __name__ == '__main__':
-    main()
