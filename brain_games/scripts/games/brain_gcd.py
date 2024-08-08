@@ -9,7 +9,7 @@ def gcd(num1, num2):
     if more_num % less_num == 0:
         return less_num
 
-    for n in range(less_num//2, 0, -1):
+    for n in range(less_num // 2, 0, -1):
         if less_num % n == 0:
             if more_num % n == 0:
                 return n
