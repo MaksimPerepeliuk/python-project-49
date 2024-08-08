@@ -23,4 +23,4 @@ def engine(game):
             right_answer_count += 1
             print('Correct!')
 
-    print(f'Congratulations, {user_name}')
+    print(f'Congratulations, {user_name}!')
