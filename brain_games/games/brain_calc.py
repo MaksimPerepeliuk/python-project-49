@@ -19,7 +19,8 @@ def brain_calc():
 
 
 def main():
-    engine(brain_calc)
+    task_text = 'What is the result of the expression?'
+    engine(brain_calc, task_text)
 
 
 if __name__ == '__main__':

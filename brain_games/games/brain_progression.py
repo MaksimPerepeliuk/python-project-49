@@ -21,7 +21,8 @@ def brain_progression():
 
 
 def main():
-    engine(brain_progression)
+    task_text = 'What number is missing in the progression?'
+    engine(brain_progression, task_text)
 
 
 if __name__ == '__main__':

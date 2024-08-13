@@ -26,7 +26,8 @@ def brain_gcd():
 
 
 def main():
-    engine(brain_gcd)
+    task_text = 'Find the greatest common divisor of given numbers.'
+    engine(brain_gcd, task_text)
 
 
 if __name__ == '__main__':

@@ -13,7 +13,8 @@ def brain_even():
 
 
 def main():
-    engine(brain_even)
+    task_text = 'Answer "yes" if the number is even, otherwise answer "no".'
+    engine(brain_even, task_text)
 
 
 if __name__ == '__main__':

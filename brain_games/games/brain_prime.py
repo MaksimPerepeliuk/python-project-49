@@ -26,7 +26,8 @@ def brain_prime():
 
 
 def main():
-    engine(brain_prime)
+    task_text = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    engine(brain_prime, task_text)
 
 
 if __name__ == '__main__':
