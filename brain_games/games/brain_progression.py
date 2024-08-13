@@ -15,7 +15,7 @@ def brain_progression():
     right_answer = str(progression[hidden_index])
 
     progression[hidden_index] = None
-    question = str(progression)[1:-1].replace('None', '..')
+    question = str(progression)[1:-1].replace('None', '..').replace(',', '')
 
     return question, right_answer
 
